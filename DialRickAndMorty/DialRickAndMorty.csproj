@@ -30,14 +30,20 @@
   <ItemGroup>
     <Compile Include="DialRickAndMorty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RickAndMortyContacts.xaml.cs">
-      <DependentUpon>RickAndMortyContacts.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Data\RickAndMortyCharacters.cs" />
     <Compile Include="Data\Gender.cs" />
     <Compile Include="Data\Person.cs" />
+    <Compile Include="RickAndMortyDetails.xaml.cs">
+      <DependentUpon>RickAndMortyDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RickAndMortyContacts.xaml.cs">
+      <DependentUpon>RickAndMortyContacts.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="RickAndMortyDetails.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="RickAndMortyContacts.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

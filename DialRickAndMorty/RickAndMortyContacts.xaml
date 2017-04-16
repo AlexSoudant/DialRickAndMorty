@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	x:Class="clr-namespace:DialRickAndMorty;assembly=DialRickAndMorty"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:local="clr-namespace:DialRickAndMorty;assembly=DialRickAndMorty"
+	x:Class="DialRickAndMorty.RickAndMortyContacts"
 	Title="Contacts"
-	BindingContext="{x:Static local:DialRickAndMorty.Characters}">
+	BindingContext="{x:Static local:DialRickAndMorty.Characters}"
+	Padding="5,0,5,5">
 
-	
-	<ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness" iOS="5,20,5,5" Android="5,0,5,5" WinPhone="5,0,5,5" />
-    </ContentPage.Padding>
 	
 	<ContentPage.Content>
 	</ContentPage.Content>
 	
-	<ListView x:Name="RickAndMortyContacts"
+	<ListView x:Name="RAndMContacts"
 		ItemsSource="{Binding .}" />
 
 </ContentPage>
+

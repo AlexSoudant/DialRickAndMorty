@@ -10,7 +10,7 @@ namespace DialRickAndMorty
 		public App()
 		{
 
-			MainPage = new RickAndMortyContacts();
+			MainPage = new NavigationPage(new RickAndMortyContacts());
 		}
 
 	}
